@@ -1,0 +1,27 @@
+#include<stdio.h>
+ 
+double f(double x) 
+{
+ return x*x;
+}
+ main()
+ { 
+  double a,b,h, sum =0,integer,x;
+  int n ; 
+  printf("enter the initial limit\na:");
+  scanf("%lf",&a);
+  printf("enter the upper limit\nb:");
+  scanf("%lf",&b);
+  printf("enter the number of sub-interval\nn:");
+  scanf("%d",&n);
+  h=(b-a)/n; 
+  
+  int i; 
+  for(i=1;i<n;i++)
+  {
+     x=a+i*h;
+     sum=sum+f(x);
+  }
+  integral=h/2.0*(f(a)+2*sum+f(b));
+  printf("\n the integral is:%lf",integral);
+ }
