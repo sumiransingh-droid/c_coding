@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct node
+{
+ int data; 
+ struct node* link; 
+};
+ struct node*root=NULL;
+ 
+ void append()
+ {
+  struct node*temp;
+  temp=(struct node*)malloc(sizeof(struct node));
+  printf("enter node data:");
+  scanf("%d",temp->data);
+  temp->link=NULL;
+  if(root==NULL)
+  {
+   struct node*p;
+   p=root;
+   while(p->link!=NULL)
+   {
+    p=p->link; 
+   }
+   p->link=temp;
+  }
+  void main()
+  {
+   int n=1;
+   printf("enter values in linked list");
+   while(n==1)
+   {
+    append();
+    printf("press 1 to enter more values and 0 to end");
+    scanf("%d",&n);
+    }
+  }
+ }
+    
