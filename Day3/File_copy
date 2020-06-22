@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<coino.h>
+void main()
+{
+ file *fp1, *fp2; 
+ into ch; 
+ fp1=fopen("data1","r");
+ fp2=fopen("data2","w");
+ if(fp1==null||fp2==NULL)
+  {
+   printf("\n error:file cannot exits");
+   exit(1);
+  }
+ while((ch=fgetc(fp1)!=EOF)
+    { 
+    fputc(ch,fp2);
+    }
+ fclose(fp1);
+ fclose(fp2);
+ printf("\n copied");
+ getchar();   
+}
