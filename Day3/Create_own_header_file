@@ -1,0 +1,44 @@
+#define pi 3.14
+#define area(r)(pi*r*r)
+#define circumference(r)(2*pi*r)
+#define square(s)(s*s)
+#define perimeter(s)(4*s)
+int add(int a, int b)
+{
+ return(a+b);
+} 
+ int area(int a) 
+{ 
+ return area(a);
+}
+ int cir(int a) 
+{
+ return circumference(a);
+}
+ int sq a(int a) 
+{
+ return square a(a);
+}
+ int Peri sq(int a) 
+{
+ return perimeter sq(a);    
+}
+#include <stdio.h>
+#include <Conio.h>
+#include "header.h"
+
+int main()
+{
+ int a, b, c, d, e, f, r, s; 
+ printf("enter radius of circle and side of square\n");
+ scanf("%d %d",r, s);
+ a=area(r);
+ b=cir(r);
+ c=sqa(s);
+ d=perisq(s);
+ e=add(a,c);
+ f=add(b,d);
+ printf("sum of area=%d\n sum of boundries=%d,e,f",);
+ getch();
+ return 0;
+}
